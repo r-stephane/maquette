@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
 }
@@ -7,8 +7,8 @@ body {
 .hero{
     background-image: url('image/bg.jpg');
     background-size: cover;
+    height: 80vh;
     color: white;
-    height: 100vh;
     position: relative;
 }
 
@@ -51,41 +51,101 @@ nav ul li a {
 }
 
 .section-title {
-    padding: 20px;
+    padding: 30px;
 }
 
 .section-title h2 {
-    font-size: 2em;
-    border-left: 4px solid #90ee90;
-    padding-left: 10px;
+    font-size: 50px;
+    font-family: 'Abril FateFace';
+    font-weight: 100;
+    position: relative;
+    margin-top: -60px;
+}
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: #ADD981;
+    width: 60px;
+    height: 7px;
+    bottom:40;
 }
 
 .products{
     text-align: center;
     display: flex;
     overflow-x: auto;
-    gap: 20px;
-    padding: 20px 0;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px 20px;
 }
 
 .product{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/* nos plantes*/
+.All-plants{
+    margin-top: 50px;
+    position: relative;
+}
+.section-titre{
+    margin: 20px;
+}
+.section-titre::before{
+    content:"";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 10px;
+    bottom: 0px;
+}
 
-.product-grid{
+.plante-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0;
-    gap: 20px;
-    text-align: center;
-    width: 80%px;
-    height: 200px;
+    min-height: 150vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,400px);
+    gap:19px;
+    }
+
+.plante-grid1{
+    background-image: url('image/plante7.jpg');
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-size: cover;
+}
+.plante-grid2{
+    background-image: url('image/plante8.jpg');
+    grid-column: 3/5;
+    background-size: cover;
+}
+.plante-grid3{
+    background-image: url('image/plante9.jpg');
+    grid-column: 3/5;
+    background-size: cover;
+}
+.plante-grid4{
+    background-image: url('image/plante10.jpg');
+    grid-column: 1;
+    grid-row: 3/5;
+    background-size: cover;
+}
+.plante-grid5{
+    background-image: url('image/plante11.jpg');
+    grid-column: 2/4;
+    grid-row: 3/5;
+    background-size: cover;
+}
+.plante-grid6{
+    background-image: url('image/plante12.jpg');
+    grid-column: 4;
+    grid-row: 3/5;
+    background-size: cover;
 }
 
 .product img {
     width: 100%;
-      /* max-width: 250px; */
+    max-width: 800%; 
     height: 80%;
     border-radius: 10px;
 }
@@ -94,6 +154,9 @@ span{
 }
 strong{
     background-color: #90ee90;
+     border-radius: 20px;
+    width: 20% 30%;
+    height: 23px;
 }
 .r{
     background-color: #f0f0f0;
@@ -105,7 +168,111 @@ strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:white;
-    padding-top:80%;
-    width: 20px 40px;
+    margin: 20px,300px;
+    font-weight: 600;
+
+}
+footer a.cgv{
+    text-decoration:none;
+    color:rgb(16, 15, 15);
+    margin: 10px 20px;
+}
+.para{
+    text-decoration: none;;
+    color: rgb(16, 15, 15);
+    margin: 10px 20px;
+}
+.plante-details{
+    background-color:#e0d5d5df;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+strongs{
+    background-color: #90ee90;
+     border-radius: 20px;
+    width: 20% 30%;
+    height: 23px;
+}
+.plante1{
+   background-color: #f0f0f0; 
+   display: flex;
+   justify-content: space-between;
+   bottom: 60px;
+   width: 100%;
+   margin-top: 800px;
+   gap: 0px;
+
+}
+stronge{
+    background-color: #90ee90;
+     border-radius: 20px;
+    width: 20% 30%;
+    height: 23px;
+}
+.plante2{
+    background-color: #f0f0f0; 
+   display: flex;
+   justify-content: space-between;
+   bottom: 60px;
+   width: 100%;
+   margin-top: 380px;
+   gap: 0px;
+}
+strongt{
+    background-color: #90ee90;
+     border-radius: 20px;
+    width: 20% 30%;
+    height: 23px;
+}
+.plante3{
+   background-color: #f0f0f0; 
+   display: flex;
+   justify-content: space-between;
+   bottom: 60px;
+   width: 100%;
+   margin-top: 380px;
+}
+strongr{
+    background-color: #90ee90;
+     border-radius: 20px;
+    width: 20% 30%;
+    height: 23px;
+}
+.plante4{
+   background-color: #f0f0f0; 
+   display: flex;
+   justify-content: space-between;
+   bottom: 60px;
+   width: 100%;
+   margin-top: 800px; 
+}
+strongu{
+    background-color: #90ee90;
+     border-radius: 20px;
+    width: 20% 30%;
+    height: 23px;
+}
+.plante5{
+    background-color: #f0f0f0; 
+   display: flex;
+   justify-content: space-between;
+   bottom: 60px;
+   width: 100%;
+   margin-top: 800px;
+}
+stronga{
+    background-color: #90ee90;
+    border-radius: 20px;
+    width: 20% 30%;
+    height: 23px;
+}
+.plante6{
+    background-color: #f0f0f0; 
+   display: flex;
+   justify-content: space-between;
+   bottom: 60px;
+   width: 100%;
+   margin-top: 800px;
 }
